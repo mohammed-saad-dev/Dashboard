@@ -1,38 +1,477 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+  @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@200&family=Poppins:wght@500&family=Raleway:wght@300&family=Ubuntu:wght@300&display=swap');
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
+.App{
+  display: flex;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  height: 190vh;
+}
+.container{
+  padding:0 20px;
+  margin:0px  auto
+}
+.List{
+  width: 220px;
+  height: 190vh;
+}
+.padding{
+  padding-left: 20px;
+}
+/*list item style*/
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*Logo*/
+.Logo{
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid lightgray;
+}
+.TimeLogo{
+  width: 40px;
+  height: 40px;
+  background: #0E31BF;
+  border-radius: 5px;
+}
+.Logo p{
+  width: 140px;
+  padding-left: 10px;
+}
+Overview
+.overview{
+  height: 250px;
+  
+}
+.ParentTitle{
+  display: flex;
+}
+.ParentTitle i{
+  width: 35px;
+  height: 35px;
+  background: #1059FD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 210px;
+  top: 111px;
+  padding-left: 3px;
+  rotate: 180deg;
+}
+.title{
+  font-size: 12px;
+  color: #999;
+  padding-top: 15px;
+}
+.Overview-Button {
+  margin-top: 10px;
+}
+.Overview-Button button{
+  height: 50px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
+.Overview-Button i{
+  font-size: 18px;
+}
+.Overview-Button p{
+  padding-left: 10px;
+}
+.low{
+  height: 200px;
+}
+.hover{
+  width: 220px;
+  transition: 0.2s linear 0.5s;
+
+}
+.hover:hover {
+  background-color: #F4F7FE;
+  color: white;
+}
+.notic{
+  width: 19px;
+  height: 19px;
+  background: #1265FF;
+  border-radius: 4px;
+  color: white;
+  margin-left: 60px;
+}
+.MyTasks{
+  margin-left: 54px;
+}
+.Leaves{
+  margin-left: 67px;
+}
+.Notic{
+  margin-left: 80px;
+}
+card style
+.card{
+  width: 185px;
+  height: 250px;
+  background: #F0F0F0;
+  border-radius: 5px;
+  margin-top: 25px;
+}
+.card i{
+  width: 20px;
+  height: 20px;
+  background: #A8A8A8;
+  color: #F0F0F0;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 135px;
+  margin-top: 10px;
+  padding-left: 4px;
+  padding-top: 2px;
+}
+.circle{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #1265FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circle p{
+  width: 48px;
+  height: 48px;
+  background: #F0F0F0;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.information-card{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.card-title{
+  font-size: 10px;
+  margin-top: 10px;
+}
+.card-description{
+  font-size: 10px;
+  text-align: center;
+  color: #999;
+  padding-top: 8px;
+
+}
+.card-button{
+  width: 145px;
+  height: 35px;
+  margin-top: 10px;
   color: white;
+  background: #4C78FF;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+  cursor: pointer;
+}
+/*start style landing*/
+
+.container-landing{
+  padding:40px 40px;
+  margin:0px  auto
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+.Landing{
+  background: #F4F7FE;
+  width: 283vh;
+}
+.title-landing{
+  font-size: 25px;
+}
+.title-landing + p{
+  font-size: 11px;
+  color: #8e8e8e;
+}
+.profile{
+  display: flex;
+}
+.profile i{
+  color: #8e8e8e;
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.me{
+  width: 200px;
+  height: 50px;
+  background: white;
+  border-radius: 25px;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+}
+.photo{
+  width: 40px;
+  height: 40px;
+  background: black;
+  border-radius: 50%;
+  margin: 5px 15px;
+}
+.first-row{
+  display: flex;
+  justify-content: space-between;
+}
+.box{
+  width: 350px;
+  height: 50px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+.box p{
+  font-size: 13px;
+  color: #a2a2a2;
+}
+.box p span{
+  color: black;
+  font-size: 15px;
+  padding-right: 20px;
+  margin-left: 5px;
+}
+.box i{
+  background: #ccc;
+  border-radius: 50%;
+  width: 25px;
+  height: 24px;
+  text-align: center;
+  padding-top: 4px;
+  color: #8a8a8a;
+}
+.box i + p{
+  margin-left: 25px;
+}
+.second-row{
+  margin-top:25px;
+  display: flex;
+  justify-content: space-between;
+}
+.box-two{
+  height: 80px;
+  background: white;
+  width: 350px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+.title-in-box{
+  display: flex;
+}
+.title-in-box i{
+  background: #ccc;
+  border-radius: 50%;
+  width: 25px;
+  height: 24px;
+  text-align: center;
+  padding-top: 6px;
+  color: #8a8a8a;
+  font-size: 12px;
+}
+.title-in-box i + p{
+  font-size: 13px;
+  color: black;
+  margin: 1px 15px;
+}
+.first{
+  display: flex;
+  align-items: center;
+}
+.detailes{
+  display: flex;
+}
+.detailes div{
+  text-align: center;
+}
+.subject{
+  color:#ccc ;
+}
+.right-Border{
+  border-right: 1px solid ;
+  width: 60px;
+}
+.padding-left{
+  padding-left: 10px;
+}
+.therd-row{
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.box-three{
+  height: 270px;
+  background: white;
+  width: 710px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 25px;
+}
+.box-side{
+  height: 270px;
+  width: 350px;
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 5px;
+  padding:  27px 15px ;
+}
+.box-side .Today p{
+  font-size:10px ;
+}
+.desc{
+  display: flex;
+  justify-content: space-between;
+}
+.Today{
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.Today p{
+  margin-right: 80px;
+  font-size: 15px;
+  color: #444;
+}
+.titles{
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: 70px 130px 130px 111px 100px auto;
+}
+.titles p{
+  color: #ccc;
+  font-size: 13px;
+}
+.check{
+  background: #09CB99;
+  border-radius: 50%;
+  width: 25px;
+  height: 24px;
+  text-align: center;
+  padding-top: 6px;
+  color: white;
+  font-size: 15px;
+}
+.for-center{
+  display: flex;
+  align-items: center;
+}
+.for-center div{
+  padding-left: 5px;
+}
+.black p{
+  color: black;
+}
+.progress{
+  height: 10px;
+  background: #ccc;
+  border-radius: 5px;
+  margin-top: 7px;
+}
+.wow{
+  height: 10px;
+  background: #3A0AFE;
+  width: 80px;
+  border-radius: 10px;
+}
+.box-side .titles{
+  grid-template-columns: 30px 110px 100px 100px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.fourth-row .box-side .titles{
+  grid-template-columns: 30px 110px 90px 100px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fourth-row{
+  margin-top:25px;
+  display: flex;
+  justify-content: space-between;
+}
+.fourth-row .box-side{
+  height: 270px;
+  width: 351px;
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 5px;
+  padding: 15px;
+}
+.buttons{
+  display: flex;
+  justify-content: space-between;
+}
+.task{
+  font-family: inherit;
+  background: #4184FF;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+.task + button{
+  height: 41px;
+  width: 145px;
+  font-family: inherit;
+  background: white;
+  border: 1px solid #6a6a6a;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.Leave p + p{
+  font-size: 10px;
+  color: #ccc;
+}
+.Last-box .desc p{
+  font-size: 11px;
+}
+.Last{
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 3px 10px;
+}
+.Sign{
+  background: #FCD120;
+  border-radius: 50%;
+  width: 25px;
+  height: 24px;
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  margin-left: 10px;
 }
